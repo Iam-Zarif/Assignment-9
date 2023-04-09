@@ -14,7 +14,7 @@ const Header = () => {
           </div>
           <div className="flex gap-14 justify-center">
             <Link to="/statistics">
-              <span className="text-indigo-500 font-semibold hover:bg-slate-200 px-3 py-3 rounded-2xl">
+              <span className=" font-semibold hover:bg-slate-200 px-3 py-3 rounded-2xl">
                 Statistics
               </span>
             </Link>

@@ -9,13 +9,20 @@ import Footer from "./Components/Footer/Footer";
 import Cover from "./Components/Cover/Cover";
 import JobCategory from "./Components/JobCategory/JobCategory";
 import Statistics from "./Components/Statistics/Statistics";
+import Blog from "./Components/Blog/Blog";
+import AppliedJobs from "./Components/AppliedJobs/AppliedJobs";
 
 
 const router = createBrowserRouter([
   {
     path: "/",
     element: <Header></Header>,
-    children: [{ path: "/", element: <Cover></Cover> }, { path: "statistics" ,element:<Statistics></Statistics>}],
+    children: [
+      { path: "/", element: <Cover></Cover> }, 
+      { path: "statistics" ,element:<Statistics></Statistics>},
+    {path:'blog' , element:<Blog></Blog>},
+    {path:'appliedJobs' , element:<AppliedJobs></AppliedJobs>}
+    ],
   },
   { path: "/", element: <Footer></Footer> },
 ]);
