@@ -15,7 +15,9 @@ import ViewDetails from "./Components/ViewDetails/ViewDetails";
 
 
 const router = createBrowserRouter([
+  {path:'*' , element: <div>Hello 404</div>},
   {
+    
     path: "/",
     element: <Header></Header>,
     children: [
@@ -24,7 +26,7 @@ const router = createBrowserRouter([
       { path: "blog", element: <Blog></Blog> },
       { path: "appliedJobs", element: <AppliedJobs></AppliedJobs> },
       { path: "viewDetails/:idd" , element:<ViewDetails></ViewDetails>,
-    loader:() => fetch("Feature.json")
+    loader:() => fetch("/Feature.json")
     },
       
     ],

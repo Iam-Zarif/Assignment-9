@@ -15,7 +15,7 @@ fetch("Feature.json")
     },[])
     return (
       <div className="container">
-        <h1 className="text-center mt-36 text-4xl">Featured Jobs</h1>
+        <h1 className="text-center mt-36 text-4xl font-bold">Featured Jobs</h1>
         <p className="text-center font-semibold mt-5">
           Explore thousands of job opportunities with all the information you
           need. Its your future

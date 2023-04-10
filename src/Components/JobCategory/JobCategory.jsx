@@ -11,7 +11,7 @@ fetch("category.json")
    },[])
     return (
       <div className="mt-20">
-        <h1 className="text-4xl text-center">Job Category List</h1>
+        <h1 className="text-4xl text-center font-bold">Job Category List</h1>
         <p className="mt-5 text-center font-semibold">
           Explore thousands of job opportunities with all the information you
           need. Its your future
