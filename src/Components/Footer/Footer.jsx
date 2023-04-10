@@ -4,7 +4,7 @@ import { Outlet } from 'react-router-dom';
 
 const Footer = () => {
     return (
-      <footer className='mt-20'>
+      <footer className='mt-20 bg-indigo-700'>
         
         <div className='flex justify-around'>
           <div className='flex flex-col'>

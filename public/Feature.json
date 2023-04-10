@@ -1,5 +1,6 @@
 [
   {
+    "address" : "123 Main Street, Downtown District, Central Area",
     "id": 1,
     "company_logo": "./airbnb.png",
     "job_title": "Software Engineer",
@@ -16,9 +17,11 @@
       "phone": "555-1234",
       "email": "jobs@example.com"
     }
+    
   },
 
   {
+    "address": "456 Elm Street, West End District, Riverside Area",
     "id": 2,
     "company_logo": "./CareerHub.png",
     "job_title": "Data Analyst",
@@ -37,6 +40,7 @@
     }
   },
   {
+    "address":"789 Oak Street, Northside District, Parkview Area",
     "id": 3,
     "company_logo": "./google.png",
     "job_title": "Google Database LLC",
@@ -56,6 +60,7 @@
   },
 
   {
+    "address": "1010 Pine Street, Southside District, Hillcrest Area",
     "id": 4,
     "company_logo": "./netflix.png",
     "job_title": "Data Scientist",
@@ -74,6 +79,7 @@
     }
   },
   {
+    "address": "1212 Maple Street, Eastside District, Meadowview Area",
     "id": 5,
     "company_logo": "./tesla.png",
     "job_title": "Human Resources Manager",
@@ -92,7 +98,8 @@
     }
   },
   {
-    "id": 9,
+    "address": "1414 Cedar Street, Midtown District, Business District Area",
+    "id": 6,
     "company_logo": "./google.png",
     "job_title": "Sales Manager",
     "company_name": "Sales Force Inc",
