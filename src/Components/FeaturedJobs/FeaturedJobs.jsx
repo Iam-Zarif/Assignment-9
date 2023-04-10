@@ -4,6 +4,10 @@ import { Link } from 'react-router-dom';
 
 const FeaturedJobs = () => {
     let [feature , setFeature] = useState([])
+    let[seeMore, setSeeMore] = useState(false)
+    let SeeMoreData =()=>{
+      setSeeMore(true);
+    }
     useEffect(() =>{
 fetch("Feature.json")
   .then((res) => res.json())
@@ -17,7 +21,7 @@ fetch("Feature.json")
           need. Its your future
         </p>
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 px-5 lg:px-0">
-          {feature.slice(0, 4).map((data) => (
+          {feature.slice(0, seeMore ? 6 : 4).map((data) => (
             <FeaturedJobsDetails
               key={data.id}
               data={data}
@@ -26,9 +30,14 @@ fetch("Feature.json")
         </div>
 
         <section className="text-center mt-12">
-          <Link className="px-4 py-3 rounded-xl bg-indigo-500 text-white font-semibold">
-            See All Jobs
-          </Link>
+          {!seeMore && (
+            <Link
+              onClick={SeeMoreData}
+              className="px-4 py-3 rounded-xl bg-indigo-500 text-white font-semibold"
+            >
+              See All Jobs
+            </Link>
+          )}
         </section>
       </div>
     );

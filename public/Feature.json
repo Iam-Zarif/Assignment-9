@@ -75,7 +75,7 @@
   },
   {
     "id": 5,
-    "company_logo": "https://example.com/logo8.png",
+    "company_logo": "./tesla.png",
     "job_title": "Human Resources Manager",
     "company_name": "HR Solutions",
     "remote_or_onsite": "Onsite",
@@ -93,7 +93,7 @@
   },
   {
     "id": 9,
-    "company_logo": "https://example.com/logo9.png",
+    "company_logo": "./google.png",
     "job_title": "Sales Manager",
     "company_name": "Sales Force Inc",
     "remote_or_onsite": "Remote",
