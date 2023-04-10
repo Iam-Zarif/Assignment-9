@@ -12,10 +12,11 @@ import Statistics from "./Components/Statistics/Statistics";
 import Blog from "./Components/Blog/Blog";
 import AppliedJobs from "./Components/AppliedJobs/AppliedJobs";
 import ViewDetails from "./Components/ViewDetails/ViewDetails";
+import FourouFour from "./Components/FourouFour/FourouFour";
 
 
 const router = createBrowserRouter([
-  {path:'*' , element: <div>Hello 404</div>},
+  {path:'*' , element:<FourouFour></FourouFour>},
   {
     
     path: "/",
