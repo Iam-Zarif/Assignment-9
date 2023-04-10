@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 
 const FeaturedJobsDetails = ({data}) => {
     let {
+      id,
       company_logo,
       job_title,
       company_name,
@@ -32,7 +33,7 @@ const FeaturedJobsDetails = ({data}) => {
             <p className="font-semibold text-slate-500">Salary : {salary}</p>
           </div>
           <span className='inline-block border px-4 py-3 rounded-xl bg-indigo-500 text-white font-semibold mt-5'>
-            <Link>View Details</Link>
+            <Link to={`viewDetails/${id}`}>View Details</Link>
           </span>
         </div>
       </div>

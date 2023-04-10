@@ -19,7 +19,7 @@ fetch("Feature.json")
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 px-5 lg:px-0">
           {feature.slice(0, 4).map((data) => (
             <FeaturedJobsDetails
-              key={data.key}
+              key={data.id}
               data={data}
             ></FeaturedJobsDetails>
           ))}

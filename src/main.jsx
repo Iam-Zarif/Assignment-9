@@ -11,6 +11,7 @@ import JobCategory from "./Components/JobCategory/JobCategory";
 import Statistics from "./Components/Statistics/Statistics";
 import Blog from "./Components/Blog/Blog";
 import AppliedJobs from "./Components/AppliedJobs/AppliedJobs";
+import ViewDetails from "./Components/ViewDetails/ViewDetails";
 
 
 const router = createBrowserRouter([
@@ -18,10 +19,14 @@ const router = createBrowserRouter([
     path: "/",
     element: <Header></Header>,
     children: [
-      { path: "/", element: <Cover></Cover> }, 
-      { path: "statistics" ,element:<Statistics></Statistics>},
-    {path:'blog' , element:<Blog></Blog>},
-    {path:'appliedJobs' , element:<AppliedJobs></AppliedJobs>}
+      { path: "/", element: <Cover></Cover> },
+      { path: "statistics", element: <Statistics></Statistics> },
+      { path: "blog", element: <Blog></Blog> },
+      { path: "appliedJobs", element: <AppliedJobs></AppliedJobs> },
+      { path: "viewDetails/:id" , element:<ViewDetails></ViewDetails>,
+    loader:() => fetch("Feature.json")
+    },
+      
     ],
   },
   { path: "/", element: <Footer></Footer> },
