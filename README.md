@@ -1,6 +1,7 @@
 
 
 
+
 ## About Site
 
 - social platform of a professional platform
@@ -21,3 +22,9 @@
 ## Bug fixing
 
 - Has created component for undefined url
+
+## 🔗 Live site
+[![Dream Job](https://img.shields.io/badge/my_portfolio-000?style=for-the-badge&logo=ko-fi&logoColor=white)](https://glittery-arithmetic-34d24f.netlify.app/)
+
+
+
