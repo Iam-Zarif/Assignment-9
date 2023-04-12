@@ -21,7 +21,7 @@ const Statistics = () => {
      { id: 3, Assignment: "Assignment : 3", Marks: 60 },
      { id: 4, Assignment: "Assignment : 4", Marks: 60 },
      { id: 5, Assignment: "Assignment : 5", Marks: 58 },
-     { id: 6, Assignment: "Assignment : 6", Marks: 52 },
+     { id: 6, Assignment: "Assignment : 6", Marks: 49 },
      { id: 7, Assignment: "Assignment : 7", Marks: 60 },
      { id: 8, Assignment: "Assignment : 8", Marks: 60 },
    ]; 

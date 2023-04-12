@@ -14,23 +14,23 @@ const Header = () => {
           </div>
           <div className="flex flex-col lg:flex-row gap-10 justify-center">
             <Link to="/">
-              <span className="text-xl font-semibold hover:bg-slate-200 px-3 py-3 rounded-2xl">
+              <span className="bg-indigo-100 text-xl font-semibold hover:bg-slate-200 px-3 py-3 rounded-2xl">
                 Home
               </span>
             </Link>
             <Link to="/statistics">
-              <span className="text-xl font-semibold hover:bg-slate-200 px-3 py-3 rounded-2xl">
+              <span className="bg-indigo-100 text-xl font-semibold hover:bg-slate-200 px-3 py-3 rounded-2xl">
                 Statistics
               </span>
             </Link>
 
             <Link to="/appliedJobs">
-              <span className="text-xl font-semibold hover:bg-slate-200 px-3 py-3 rounded-2xl">
+              <span className="bg-indigo-100 text-xl font-semibold hover:bg-slate-200 px-3 py-3 rounded-2xl">
                 Applied Jobs
               </span>
             </Link>
             <Link to="/blog">
-              <span className="text-xl font-semibold hover:bg-slate-200 px-3 py-3 rounded-2xl">
+              <span className="bg-indigo-100 text-xl font-semibold hover:bg-slate-200 px-3 py-3 rounded-2xl">
                 Blog
               </span>
             </Link>

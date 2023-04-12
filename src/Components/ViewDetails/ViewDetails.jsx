@@ -4,19 +4,16 @@ import { Link, useLoaderData, useParams } from "react-router-dom";
 import { detailsData } from "../FeaturedJobsDetails/FeaturedJobsDetails";
 
 const ViewDetails = () => {
-  //  let [details,setDetails] = useState([])
-
-  //  useEffect(() =>{
-  // fetch("Feature.json")
-  //   .then((res) => res.json())
-  //   .then((data) => console.log(data));
-  //  },[])
+ const handleApplyNow = (data) => {
+   const key = `jobApplication_${Date.now()}`;
+   localStorage.setItem(key, JSON.stringify(data));
+ };
+ 
 
   let itemDetails = useLoaderData();
   console.log(itemDetails);
   const { idd } = useParams();
-  // const singleData = useContext(detailsData);
-  // const item = singleData.find((items) => console.log(items));
+  
 
   return (
     <div>
@@ -105,7 +102,10 @@ const ViewDetails = () => {
                     </span>
                   </p>
                   <Link>
-                    <button className="mt-10 w-full border py-3 px-3 rounded-2xl bg-indigo-500 text-white font-semibold hover:bg-blue-700">
+                    <button
+                      onClick={() => handleApplyNow(data)}
+                      className="mt-10 w-full border py-3 px-3 rounded-2xl bg-indigo-500 text-white font-semibold hover:bg-blue-700"
+                    >
                       Apply Now
                     </button>
                   </Link>

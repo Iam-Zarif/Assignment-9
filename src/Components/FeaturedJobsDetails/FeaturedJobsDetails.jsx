@@ -1,6 +1,6 @@
 import React, { createContext } from 'react';
 import { Link } from 'react-router-dom';
-
+import {  } from "react-icons/fa";
 export const detailsData = createContext([])
 const FeaturedJobsDetails = ({data}) => {
     let {
@@ -31,7 +31,34 @@ const FeaturedJobsDetails = ({data}) => {
               </p>
             </div>
             <div className="flex items-center gap-12  mt-5">
-              <p className="font-semibold text-slate-500">{location}</p>
+              <div className="flex">
+                <p className="font-semibold text-slate-500">
+                  {/*  */}
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    strokeWidth={1.5}
+                    stroke="currentColor"
+                    className="w-6 h-6"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      d="M15 10.5a3 3 0 11-6 0 3 3 0 016 0z"
+                    />
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z"
+                    />
+                  </svg>
+
+                  {/*  */}
+
+                  {location}
+                </p>
+              </div>
               <p className="font-semibold text-slate-500">Salary : {salary}</p>
             </div>
             <span className="inline-block border px-4 py-3 rounded-xl bg-indigo-500 text-white font-semibold mt-5">
